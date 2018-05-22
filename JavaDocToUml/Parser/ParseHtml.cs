@@ -174,6 +174,10 @@ namespace JavaDocToUml.Parser
 		{
 			Uml.GenerateUxf.MakingUxfFile(classs, path);
 		}
+		public void GenerateLatexTemplate(string path)
+        {
+			Latex.GenerateReportTemplate.GenerateTemplate(classs, path);
+        }
     }
 
 	public class ClassInfo

@@ -41,11 +41,13 @@
     <Compile Include="Parser\ParseHtml.cs" />
     <Compile Include="File\LoadHtml.cs" />
     <Compile Include="Uml\GenerateUxf.cs" />
+    <Compile Include="Latex\GenerateReportTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Parser\" />
     <Folder Include="File\" />
     <Folder Include="Uml\" />
+    <Folder Include="Latex\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

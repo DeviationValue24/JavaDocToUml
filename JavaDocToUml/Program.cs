@@ -8,7 +8,7 @@ namespace JavaDocToUml
     {
         public static void Main(string[] args)
         {
-			if (args.Length != 2)
+			if (args.Length != 3)
 				Environment.Exit(0);
 			string dirPath = args[0];
 			Parser.ParseHtml parseHtml = new Parser.ParseHtml(dirPath);
@@ -25,7 +25,11 @@ namespace JavaDocToUml
 				}
 			}
 			parseHtml.ShowClass();
-			parseHtml.GenerateUml(args[1]);
+			if (args[2] == "0")
+				parseHtml.GenerateUml(args[1]);
+			else
+				parseHtml.GenerateLatexTemplate(args[1]);
+            
         }
     }
 }
